@@ -1,0 +1,8 @@
+<!--logs.wxml-->
+<view class="container log-list">
+  <view>会预下载package1分包，包括cat、dog</view>
+  <button bindtap="catClick">cat</button>
+  <button bindtap="dogClick">dog</button>
+  <button bindtap="appleClick">apple</button>
+  <button bindtap="bananaClick">banana</button>
+</view>

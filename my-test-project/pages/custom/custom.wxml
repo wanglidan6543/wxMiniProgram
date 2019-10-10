@@ -1,0 +1,19 @@
+<!--logs.wxml-->
+<view class="container">
+  <mp-loading extClass="loading-1" type="circle" show="{{true}}"></mp-loading>
+  <mp-loading extClass="loading-2" type="circle" tips="{{tips}}"></mp-loading>
+  <mp-cells ext-class="my-cells" title="带说明的列表项" footer="底部">
+    <mp-cell value="标题文字" footer="说明文字"></mp-cell>
+    <mp-cell value="标题文字" footer="说明文字" link="{{true}}"></mp-cell>
+    <mp-cell value="标题文字" footer="说明文字" hover="{{true}}"></mp-cell>
+    <mp-cell value="标题文字" footer="说明文字" icon=""></mp-cell>
+    <block wx:for="{{slideButtons}}">
+      <mp-slideview ext-class="my-slideview" buttons="{{slideButtons}}" bindbuttontap="slideButtonTap">
+        <mp-cell extClass="cell" value="左滑可以删除" footer="说明文字" bindtap="click"></mp-cell>
+      </mp-slideview>
+    </block>
+    <mp-slideview ext-class="my-slideview" buttons="{{slideButtons}}" bindbuttontap="slideButtonTap">
+        <mp-cell  value="左滑可以删除" footer="说明文字"></mp-cell>
+    </mp-slideview>
+  </mp-cells>
+</view>

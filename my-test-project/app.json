@@ -1,0 +1,54 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/custom/custom"
+  ],
+  "subpackages": [
+    {
+      "root": "package1",
+      "pages": [
+        "pages/cat/cat",
+        "pages/dog/dog"
+      ]
+    }, 
+    {
+      "root": "package2",
+      "pages": [
+        "pages/apple/apple",
+        "pages/banana/banana"
+      ]
+    }
+  ],
+  "preloadRule": {
+    "pages/logs/logs": {
+      "network": "all",
+      "packages": ["package1"]
+    },
+    "package1/pages/cat/cat": {
+      "packages": ["package2"]
+    }
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#999999",
+    "selectedColor": "#333333",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "日志"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

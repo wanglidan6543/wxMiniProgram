@@ -1,0 +1,19 @@
+.loading-1 {
+  width: 750rpx;
+  height: 150rpx;
+  background-color: antiquewhite;
+}
+.loading-2 {
+  width: 750rpx;
+  height: 150rpx;
+  background-color: gainsboro;
+}
+.my-cells {
+  width: 750rpx;
+}
+.my-slideview {
+  background-color: antiquewhite;
+}
+.cell {
+  height: 100rpx;
+}

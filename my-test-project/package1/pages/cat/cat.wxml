@@ -1,0 +1,5 @@
+<!--logs.wxml-->
+<view class="container log-list">
+  <view>这是Cat页面</view>
+  <view>会预下载package2分包，包括apple、banana</view>
+</view>
