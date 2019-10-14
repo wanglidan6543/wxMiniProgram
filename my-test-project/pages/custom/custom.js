@@ -34,4 +34,5 @@ Page({
     console.log('slideButtonTap');
   }
 
+  // 测试 git 提交命令
 })
