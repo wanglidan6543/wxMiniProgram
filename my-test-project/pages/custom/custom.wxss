@@ -1,6 +1,6 @@
 .loading-1 {
   width: 750rpx;
-  height: 150rpx;
+  height: 750rpx;
   background-color: antiquewhite;
 }
 .loading-2 {
