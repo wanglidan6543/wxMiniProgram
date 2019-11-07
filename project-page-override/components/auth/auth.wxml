@@ -1,0 +1,4 @@
+<auth>
+  <slot wx:if="{{pageShow}}"></slot>
+  <button wx:if="{{!pageShow}}">您没有权限访问该页面</button>
+</auth>

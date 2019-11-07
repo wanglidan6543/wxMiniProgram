@@ -1,0 +1,30 @@
+<!--index.wxml-->
+<auth>
+  <view class="container">
+    <view class="userinfo">
+      <button wx:if="{{!hasUserInfo}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+      <block wx:else>
+        <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+        <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      </block>
+    </view>
+    <auth class="price-auth" key="price" 
+      bind:updatePriceStatus="updatePriceStatus">
+      <view>{{showPrice ? '15.4元':'信息认证后才能看到价格'}}</view>
+    </auth>
+    <auth class="cart-auth" key="addToShopCart"
+      bind:needNavigateTo="needNavigateTo"
+      bind:needToast="needToast">
+      <view bindtap="addToCart">加入购物车</view>
+    </auth>
+    <button class="btn" type="primary" bindtap="onTap1">
+      更新状态1
+    </button>
+    <view class="usermotto">
+      <text class="user-motto">{{}}</text>
+    </view>
+    <button class="btn" type="primary" bindtap="onTap2">
+      更新状态2
+    </button>
+  </view>
+</auth>
