@@ -2,15 +2,7 @@ let originalPage = Page; // 保存原本的Page对象
 let route = '';
 
 let basePage = function (data) {
-  // let result = object.assign({}, data)
-  
-  // result.onLoad=function(...vals){
-  //   console.log('log')
-
-  //   data.onLoad.call(this,...vals)
-  // }
-
-
+  console.log(data);
   // 重写onLoad默认执行一些初始事件
   let originalOnLoad = data.onLoad;
   data.onLoad = function (o) {
