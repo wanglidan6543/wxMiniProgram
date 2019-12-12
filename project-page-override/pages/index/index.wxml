@@ -8,6 +8,7 @@
         <text class="userinfo-nickname">{{userInfo.nickName}}</text>
       </block>
     </view>
+
     <auth class="price-auth" key="price" 
       bind:updatePriceStatus="updatePriceStatus">
       <view>{{showPrice ? '15.4元':'信息认证后才能看到价格'}}</view>
@@ -26,5 +27,27 @@
     <button class="btn" type="primary" bindtap="onTap2">
       更新状态2
     </button>
+
+    <button bindtap='handleIf'>改变if</button>
+    <button bindtap='handleHidden'>改变hidden</button>
+    <view wx:if="{{showif}}">wx:if测试</view>
+    <view hidden='{{showhidden}}'>hidden显示隐藏测试</view>
+    <view hidden='{{!showhidden}}'>hidden显示隐藏测试2</view>
+
+    <button bindtap="handleComponent">切换</button>
+    <view class="test">
+      <!-- <c1 wx:if="{{showC1}}"></c1>
+      <c2 wx:if="{{!showC1}}"></c2> -->
+      <c1 is-hidden="{{!showC1}}" key="{{key}}">HHHHH</c1>
+      <c2 is-hidden="{{showC1}}" key="{{key}}">WWWWWWW</c2>
+    </view>
+
+    <textarea class="text-area" placeholder="这是个placeholder"></textarea>
+    <!-- <cover-view class="mask">
+      <cover-view class="content"></cover-view>
+    </cover-view> -->
+    <!-- <view class="mask">
+      <view class="content"></view>
+    </view> -->
   </view>
 </auth>

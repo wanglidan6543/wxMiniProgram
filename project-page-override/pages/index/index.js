@@ -12,7 +12,11 @@ app.BasePage({
     // 新加的
     showPrice: false,
     link: '',
-    toast: ''
+    toast: '',
+    showif: true,
+    showhidden: false,
+    showC1: true,
+    key: 'default'
   },
   onLoad: function () {
     updateAuthority();
@@ -114,5 +118,21 @@ app.BasePage({
   needToast(obj) {
     this.data.toast = obj.detail;
     this.data.link = '';
+  },
+  handleIf(){
+    this.setData({
+      showif: !this.data.showif,
+    });
+  },
+  handleHidden(){
+    this.setData({
+      showhidden: !this.data.showhidden,
+    });
+  },
+  handleComponent() {
+    this.setData({
+      showC1: !this.data.showC1,
+      key: this.data.key + ',|,'
+    });
   }
 })

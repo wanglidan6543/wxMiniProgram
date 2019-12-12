@@ -1,5 +1,7 @@
 {
   "usingComponents": {
-    "auth": "../../components/auth/auth"
+    "auth": "../../components/auth/auth",
+    "c1":"../../components/c1/c1",
+    "c2":"../../components/c2/c2"
   }
 }

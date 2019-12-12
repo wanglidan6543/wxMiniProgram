@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "正鲜生",
+  "enablePullDownRefresh": true,
+  "onReachBottomDistance": 120,
+  "usingComponents": {
+  }
+}

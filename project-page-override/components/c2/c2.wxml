@@ -1,0 +1,6 @@
+<view hidden="{{isHidden}}">
+  <view>c2c2c2c2</view>
+  <view>{{key}}</view>
+</view>
+
+

@@ -1,0 +1,5 @@
+<view hidden="{{isHidden}}">
+  <view>c1c1c1c1</view>
+  <button bindtap="update">完成</button>
+</view>
+
